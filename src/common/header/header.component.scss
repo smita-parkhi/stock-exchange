@@ -44,6 +44,8 @@
     }
     .right-section {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
         .connect-telegram-wrapper {
             text-align: center;
             .telegram-text {

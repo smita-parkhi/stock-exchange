@@ -1,0 +1,16 @@
+.image-placeholder-wrapper{
+    width: 100%;
+    margin: 10px 0 0 0;
+    .banner-image{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .image-placeholder-wrapper{
+        margin: 80px 0 0 0;
+        .banner-image{
+        }
+    }
+}

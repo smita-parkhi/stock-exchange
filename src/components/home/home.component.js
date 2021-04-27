@@ -21,7 +21,7 @@ export default function Home(props) {
         <div className='home-wrapper' style={{
             backgroundColor: isDarkMode ? '#191D28' : '#FFFFFF'
         }}>
-            <Header switchChangeCallback={handleSwitchChange} />
+            <Header isDarkMode={isDarkMode} switchChangeCallback={handleSwitchChange} />
 
             <StatsInfo isDarkMode={isDarkMode} />
             
@@ -35,7 +35,7 @@ export default function Home(props) {
                 image={FTX_NEWS_BANNER}
             />
 
-            <Footer isDarkMode={isDarkMode}  />
+            <Footer isDarkMode={isDarkMode} />
         </div>
     )
 }

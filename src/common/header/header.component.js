@@ -1,4 +1,5 @@
 import { BRAND_LOGO, TELEGRAM_LOGO } from '../../constants/images.constants'
+import Counter from '../counter/index.component'
 
 import Switch from '../switch/index.component'
 
@@ -6,7 +7,7 @@ import './header.component.scss'
 
 export default function Header(props) {
     // props
-    const { switchChangeCallback } = props
+    const { switchChangeCallback, isDarkMode } = props
 
     const handleSwitchChange = () => {
         switchChangeCallback()
@@ -31,17 +32,43 @@ export default function Header(props) {
 
             <div className='middle-section'>
                 <div className='btn-group'>
-                   <button className='dropdown-btn'>INR <i class="fa fa-caret-down"></i></button>
+                   <button
+                        className='dropdown-btn'
+                        style={{
+                            color: isDarkMode ? '#ffffff' : '#0c0f48',
+                            backgroundColor: isDarkMode ? '#2e3241' : '#f8f9fa',
+                            boxShadow: isDarkMode ? 'none' : '0 0 2px #ddd'
+                        }}
+                    >
+                       INR <i class="fa fa-caret-down"></i>
+                    </button>
                 </div>
                 <div className='btn-group'>
-                    <button className='dropdown-btn'>BTC <i class="fa fa-caret-down"></i></button>
+                    <button
+                        className='dropdown-btn'
+                        style={{
+                            color: isDarkMode ? '#ffffff' : '#0c0f48',
+                            backgroundColor: isDarkMode ? '#2e3241' : '#f8f9fa',
+                            boxShadow: isDarkMode ? 'none' : '0 0 2px #ddd'
+                        }}
+                    >
+                        BTC <i class="fa fa-caret-down"></i>
+                    </button>
                 </div>
                 <div className='btn-group'>
-                <button className='secondary-btn'>BUY BTC</button>
+                    <button
+                        className='dropdown-btn' style={{
+                            color: isDarkMode ? '#ffffff' : '#0c0f48',
+                            backgroundColor: isDarkMode ? '#2e3241' : '#f8f9fa',
+                            boxShadow: isDarkMode ? 'none' : '0 0 2px #ddd'
+                        }}
+                    >
+                        BUY BTC
+                    </button>
                 </div>
             </div>
             <div className='right-section'>
-            
+                <Counter />
                 <div className='connect-telegram-wrapper'>
                     <button className='telegram-text'>
                         {/* <img

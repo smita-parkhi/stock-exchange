@@ -5,18 +5,18 @@ export default function StatsInfo({isDarkMode}) {
         <div className='container-fluid'>
             <div className='text-center'>
                 <div className='text-heading'>
-                  0.3%
+                  0.3 %
                 </div>
-                <div className='text-sub-heading'>
+                <div className='text-sub-heading' style={{color: isDarkMode ? '#ffffff' : '#0c0f48'}}>
                     5 Min
                 </div>
             </div>
         
             <div className='text-center'>
                 <div className='text-heading'>
-                  0.8%
+                  0.8 %
                 </div>
-                <div className='text-sub-heading'>
+                <div className='text-sub-heading' style={{color: isDarkMode ? '#ffffff' : '#0c0f48'}}>
                     1 Hour
                 </div>
             </div>
@@ -35,18 +35,18 @@ export default function StatsInfo({isDarkMode}) {
             
             <div className='text-center'>
                 <div className='text-heading'>
-                  6.5%
+                  6.5 %
                 </div>
-                <div className='text-sub-heading'>
+                <div className='text-sub-heading' style={{color: isDarkMode ? '#ffffff' : '#0c0f48'}}>
                     1 Day
                 </div>
             </div>
             
             <div className='text-center'>
                 <div className='text-heading'>
-                  16.2%
+                  16.2 %
                 </div>
-                <div className='text-sub-heading'>
+                <div className='text-sub-heading' style={{color: isDarkMode ? '#ffffff' : '#0c0f48'}}>
                     7 Day
                 </div>
             </div>

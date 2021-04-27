@@ -40,11 +40,9 @@
         }
         .text-sub-heading {
             font-size: 10px;
-            color: gray;
             font-weight: 500;
             opacity: 0.45;
             text-align: center;
-            color:  #5dc7c2;
             font-family: oswald;
         }
     }
@@ -56,22 +54,17 @@
         height: 150px;
         .text-center {
             .price-trade-text{
-                
                 .heading-para{
                    font-size: 40px;
                    width: 100%;
                 }
             }
             .trade-price{
-                 font-size: 80px;
-                 
+                 font-size: 80px;    
             }
             .avarge-price-text{
                 font-size: 15px;
                 margin: 18px;
-                .heading-para-sub{
-    
-                }
             }
             .text-heading {
                 font-size: 30px;
@@ -80,15 +73,7 @@
             }
             .text-sub-heading {
                 font-size: 20px;
-                color: gray;
-                font-weight: 500;
-                opacity: 0.45;
-                text-align: center;
-                color:  #5dc7c2;
-                
             }
         }
     }
-    
-
 }
